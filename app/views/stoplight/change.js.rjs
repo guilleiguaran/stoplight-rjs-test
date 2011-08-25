@@ -1,6 +1,5 @@
-message = "You clicked: "
 target = 'lamp-'+@color
-page.replace_html 'flash', message + '#' + target
+page.replace_html 'notice', @message
 # Select throws an error: https://github.com/rails/prototype-rails/issues/4
 # page.select("#stoplight div").each do |sib| 
 #   sib.add_class_name 'off'
