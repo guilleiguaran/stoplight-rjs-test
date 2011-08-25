@@ -2,10 +2,8 @@
 
 Instructions: Click on the name of a color. The stoplight should turn on that that color.
 
-Stoplight uses Prototype RJS to change the colors -- a page load should not be needed in between color changes. If you're seeing a page load, it's because of this bug: https://github.com/rails/rails/issues/2537.
-
-You'll notice that the other lamp colors don't turn off. That's because of this bug: https://github.com/rails/prototype-rails/issues/4
+Stoplight uses Prototype RJS to change the colors -- a page load should not be needed in between color changes. If you're seeing a page load, it's because of this bug: https://github.com/rails/rails/issues/2537 - Javascript compression seems to break RJS.
 
 There's a working test version of this app on Heroku:  http://blazing-mist-772.herokuapp.com/
 
-Because of a bug in assets compression on Heroku's Cedar stack, RJS fails.
+The app is running on Heroku's Cedar stack with config.assets.compress = true. Prototype RJS fails.
