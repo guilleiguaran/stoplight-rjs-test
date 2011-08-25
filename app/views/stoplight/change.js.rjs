@@ -1,0 +1,6 @@
+# page.$('stoplight').descendants().addClassName('off')
+message = "You clicked: "
+target = 'lamp-'+@color
+page.replace_html('flash', message + '#' + target)
+page[target].remove_class_name('off')
+page[target].siblings.add_class_name('off')

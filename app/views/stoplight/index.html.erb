@@ -1,0 +1,15 @@
+<h1>Stoplight Rails 3.1 RJS Tester</h1>
+<div id="flash">You clicked:</div>
+<div id="stoplight">
+  <div id="lamp-red" class="stop off">
+    <%= link_to 'Red', {:action => :change, :color => 'red'}, :remote => true %>
+  </div>
+  <div id="lamp-yellow" class="caution off">
+    <%= link_to 'Yellow', {:action => :change, :color => 'yellow'}, :remote => true %>
+  </div>
+  <div id="lamp-green" class="go off">
+    <%= link_to 'Green', {:action => :change, :color => 'green'}, :remote => true %>
+  </div>
+</div>
+<p>Instructions: Click on the name of a color. The stoplight will change to that color.</p>
+<p>Stoplight uses Prototype RJS to change the colors -- a page load should not be needed in between color changes. If you're seeing a page load, it's because of this bug: <a href="https://github.com/rails/rails/issues/2537">https://github.com/rails/rails/issues/2537</a>.</p>
