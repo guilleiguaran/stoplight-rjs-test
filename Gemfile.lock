@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 933120cdfe461a442e615c638a43bc66cb86df99
-  branch: 3-1-stable
+  revision: 283f5971c6863229a002e543cb634c93958d2bb2
+  branch: 3-1-0
   specs:
     actionmailer (3.1.0.rc6)
       actionpack (= 3.1.0.rc6)

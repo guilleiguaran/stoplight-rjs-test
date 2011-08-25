@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 # gem 'rails', '3.1.0.rc6'
 
 # Bundle edge Rails instead:
-gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
+gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-0'
 
 # Gems used only for assets and not required
 # in production environments by default.
