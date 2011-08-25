@@ -52,6 +52,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.3)
+    pg (0.11.0)
     polyglot (0.3.2)
     prototype-rails (0.3.1)
       rails (~> 3.1.0.beta1)
@@ -108,6 +109,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  pg
   prototype-rails
   rails (= 3.1.0.rc6)
   sass-rails (~> 3.1.0.rc)
