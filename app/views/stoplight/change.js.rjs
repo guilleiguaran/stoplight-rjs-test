@@ -1,7 +1,6 @@
 target = 'lamp-'+@color
 page.replace_html 'notice', @message
-# Select throws an error: https://github.com/rails/prototype-rails/issues/4
-# page.select("#stoplight div").each do |sib| 
-#   sib.add_class_name 'off'
-# end
+page.select("#stoplight div").each do |sib| 
+  sib.add_class_name 'off'
+end
 page[target].remove_class_name 'off'
